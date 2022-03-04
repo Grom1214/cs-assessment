@@ -1,0 +1,45 @@
+Time for tinyArray (10 times)
+insert 40.6 μs
+append 113. μs
+
+Time for smallArray (100 times)
+insert 54.9 μs
+append 124.6 μs
+
+Time for mediumArray (1000 times)
+insert 203.8 μs
+append 200 μs
+
+Time for largeArray (10000 times)
+insert 11.364 ms
+append 818 μs
+
+Time for extraLargeArray (100000 times)
+insert 1.4123306 s
+append 4.3217 ms
+
+
+
+Insert
+Append
+tinyArray
+54.3 μs
+137.6 μs
+smallArray 
+ 70.7 μs
+159.5 μs
+mediumArray 
+273.3 μs
+227 μs
+largeArray 
+13.2274 ms
+845 μs
+extraLargeArray 
+1.6658773999999998 s
+4.271 ms
+
+The doublerappend uses the .push method and will execute in the same time for the equation and is O(1)
+The doublerInsert uses .unshift method and will go through the entire array each time making it take longer to execute over time and volume and is O(n)
+ 
+ .push is O(1) and takes the same time to perform its task of pushing it will progress in a linear type fashion, meaning it will scale quicker overall even though it was slower at first
+whereas .unshift is O(n) meaning it will progressively take longer the larger the array is, even though it was faster at first.
