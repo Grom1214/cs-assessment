@@ -20,26 +20,16 @@ append 4.3217 ms
 
 
 
-Insert
-Append
-tinyArray
-54.3 μs
-137.6 μs
-smallArray 
- 70.7 μs
-159.5 μs
-mediumArray 
-273.3 μs
-227 μs
-largeArray 
-13.2274 ms
-845 μs
-extraLargeArray 
-1.6658773999999998 s
-4.271 ms
+|Insert
+|Append
+| tinyArray | smallArray |  mediumArray |  largeArray  | extraLargeArray       |
+| 54.3 μs   | 70.7 μs    |  273.3 μs    |  13.2274 ms  | 1.6658773999999998 s  |
+| 137.6 μs  | 159.5 μs   |  227 μs      |  845 μs      | 4.271 ms              |
 
-The doublerappend uses the .push method and will execute in the same time for the equation and is O(1)
-The doublerInsert uses .unshift method and will go through the entire array each time making it take longer to execute over time and volume and is O(n)
+ 
+
+doublerappend uses the .push method and will activate in the same time for the equation and is O(1)
+doublerInsert uses .unshift method and will go through all of the  array each time making it take longer to execute over time and volume and is O(n)
  
  .push is O(1) and takes the same time to perform its task of pushing it will progress in a linear type fashion, meaning it will scale quicker overall even though it was slower at first
 whereas .unshift is O(n) meaning it will progressively take longer the larger the array is, even though it was faster at first.
